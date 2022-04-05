@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #c1f4c5;
+}
+.searchAndMenuListContainer {
+  text-align: center;
+}
+.wrapper {
+  margin: 20px;
+  width: 90%;
+  height: 100vh;
+}
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  width: 350px;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #65c18c;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+}
+#search-container input:focus {
+  border-bottom-color: #139487;
+}
+#search-container button {
+  padding: 10px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #65c18c;
+  color: white;
+  font-size: 1.2rem;
+}
+#search-container button:hover {
+  cursor: pointer;
+  background-color: #139487;
+  transition: 500ms;
+}
+.button-value {
+  padding: 10px 20px;
+  border: none;
+  margin: 20px 10px 0px 10px;
+  border-radius: 50px;
+  background-color: #65c18c;
+  color: white;
+  font-size: 1.2rem;
+}
+.button-value:hover {
+  cursor: pointer;
+  background-color: #139487;
+  transition: 500ms;
+}
+.active {
+  background-color: #139487;
+  color: #ffffff;
+}
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 90px;
+  /* border: 2px solid #110f29; */
+}
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+.image-container {
+  width: 250px;
+  height: 150px;
+  margin-right: 10px;
+  object-fit: fill;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid #65c18c; */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.product-name {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+  border-bottom: 2px solid #139487;
+}
+p {
+  margin-top: 5px;
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  #search-container input {
+    width: 250px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #65c18c;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  #products {
+    margin-right: 70px;
+  }
+  #search-container button {
+    margin-top: 10px;
+  }
+}
